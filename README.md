@@ -9,17 +9,6 @@ This importer will import:
 * Appendencies from the [the FHWA data appendix][appendix] containing data that
   are useful to understanding the shapefile data.
 
-Requirements
-============
-
-* Python 2.7
-* PyMongo
-* Requests
-* BeautifulSoup4
-* zsh 4.5+
-* gdal
-* A running mongodb server version 2.6+
-
 State of the Project
 ====================
 
@@ -31,7 +20,18 @@ to programmatically import.
 Currently, a mongodb installation with the GeoJSON imported from the shapefiles
 could be used for spatial queries about the location of routes, and the
 location of travel boundaries between states. Since route quality information
-is in the state-level data, we weren't able to ue that.
+is in the state-level data, we weren't able to use that.
+
+Requirements
+============
+
+* Python 2.7
+* PyMongo
+* Requests
+* BeautifulSoup4
+* zsh 4.5+
+* gdal
+* A running mongodb server version 2.6+
 
 [fhwadata]: http://www.fhwa.dot.gov/policyinformation/hpms/shapefiles.cfm
 [appendix]: https://www.fhwa.dot.gov/policyinformation/hpms/fieldmanual/index.cfm
